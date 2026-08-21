@@ -75,7 +75,6 @@ async function loadNews() {
                    
                     <a href="proximamente.html" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
                 </div>
-                   // <a href="${item.links}" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
             `;
 
             newsContainer.appendChild(newsCard);
@@ -122,7 +121,7 @@ async function loadNews() {
                     <a href="proximamente.html" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
 
                 </div>
-                    // <a href="${item.links}" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+          
             `;
 
             newsContainer.appendChild(newsCard);
