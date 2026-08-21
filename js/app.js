@@ -86,23 +86,23 @@ async function loadNews() {
         const fallbackNews = [
             {
                 "id": 1,
-                "title": "El Futuro de la IA en los Negocios",
-                "date": "2024-03-15",
-                "summary": "Descubre cómo la inteligencia artificial está revolucionando la optimización de procesos empresariales.",
+                "title": "OpenAI lanza una versión de ChatGPT diseñada para adolescentes",
+                "date": "2026-08-18",
+                "summary": "Ante el creciente escrutinio sobre la seguridad de los menores en entornos digitales, OpenAI ha presentado una experiencia adaptada de ChatGPT para adolescentes. Esta medida busca ofrecer un entorno de aprendizaje y apoyo más seguro, en un contexto donde los expertos alertan sobre la proliferación de contenidos inapropiados y la falta de educación sobre ciberseguridad en las escuelas.",
                 "links": "#"
             },
             {
                 "id": 2,
-                "title": "Ciberseguridad: Prioridad 2024",
-                "date": "2024-03-10",
-                "summary": "Nuevas amenazas requieren nuevas soluciones. Analizamos las mejores prácticas.",
+                "title": "El auge de los chatbots transforma el consumo global de noticias",
+                "date": "2026-08-14",
+                "summary": " Según el reporte Digital News Report 2026 del Reuters Institute, el uso de la IA para informarse subió al 10% a nivel global. Los usuarios emplean estas herramientas principalmente para buscar y resumir información, aunque el público sigue recurriendo a las fuentes de periodismo original para verificar la fiabilidad de los datos.",
                 "links": "#"
             },
             {
                 "id": 3,
-                "title": "Migración a la Nube Eficiente",
-                "date": "2024-03-05",
-                "summary": "Estrategias clave para migrar sus sistemas legacy a la nube sin interrupciones.",
+                "title": "El festival de cortometrajes hechos con IA llega a la Cineteca Nacional",
+                "date": "2026-08-20",
+                "summary": " En el ámbito cultural, LG y la Cineteca Nacional premiaron los mejores trabajos de un festival de cine OLED que reunió 73 cortometrajes creados con inteligencia artificial. Las obras ganadoras estarán en exhibición gratuita durante agosto y septiembre, demostrando el impacto directo de la IA en la producción audiovisual actual.",
                 "links": "#"
             }
         ];
@@ -112,7 +112,7 @@ async function loadNews() {
             const newsCard = document.createElement('div');
             newsCard.classList.add('news-card', 'reveal-bottom');
             newsCard.innerHTML = `
-                <img src="https://picsum.photos/seed/${item.id}/800/600" alt="${item.title}" class="news-img" onerror="this.src='assets/img/hero-bg.png'">
+                <img src="assets/img/nota${item.id}.jpe" alt="${item.title}" class="news-img" onerror="this.src='assets/img/hero-bg.png'">
                 <div class="news-content">
                     <span class="news-date">${formatDate(item.date)}</span>
                     <h3>${item.title}</h3>
