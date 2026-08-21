@@ -67,7 +67,7 @@ async function loadNews() {
             const randomImageId = Math.floor(Math.random() * 1000);
 
             newsCard.innerHTML = `
-                <img src="https://picsum.photos/seed/${item.id}/800/600" alt="${item.title}" class="news-img" onerror="this.src='assets/img/hero-bg.png'">
+                <img src="assets/img/nota${item.id}.jpe" alt="${item.title}" class="news-img" onerror="this.src='assets/img/hero-bg.png'">
                 <div class="news-content">
                     <span class="news-date">${formatDate(item.date)}</span>
                     <h3>${item.title}</h3>
