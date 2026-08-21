@@ -72,7 +72,8 @@ async function loadNews() {
                     <span class="news-date">${formatDate(item.date)}</span>
                     <h3>${item.title}</h3>
                     <p>${item.summary}</p>
-                    <a href="${item.links}" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    // <a href="${item.links}" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    <a href="proximamente.html" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
                 </div>
             `;
 
@@ -117,7 +118,7 @@ async function loadNews() {
                     <span class="news-date">${formatDate(item.date)}</span>
                     <h3>${item.title}</h3>
                     <p>${item.summary}</p>
-                    //<a href="${item.links}" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
+                    // <a href="${item.links}" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
                     <a href="proximamente.html" class="news-link">Leer más <i class="fas fa-arrow-right"></i></a>
 
                 </div>
