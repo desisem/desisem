@@ -144,3 +144,30 @@ if (cursor) {
 document.addEventListener('DOMContentLoaded', () => {
     loadNews();
 });
+
+document.getElementById('btnEnviar').addEventListener('click', function() {
+    // 1. Ofuscación de tu correo (los bots no pueden leerlo fácilmente)
+    const usuario = "desisem.mx";
+    const dominio = "gmail.com";
+    const correoCompleto = usuario + "@" + dominio;
+
+    // 2. Captura de los datos del formulario
+    const nombre = document.getElementById('name').value;
+    const asunto = document.getElementById('email').value;
+    const mensaje = document.getElementById('message').value;
+
+    // Validar que los campos no estén vacíos
+    if (!nombre || !asunto || !mensaje) {
+        alert("Por favor, llena todos los campos.");
+        return;
+    }
+
+    // 3. Estructurar el cuerpo del correo de forma más limpia
+    const cuerpoEmail = `Nombre: ${nombre}\n\nMensaje:\n${mensaje}`;
+
+    // 4. Crear el enlace mailto con codificación URL correcta para saltos de línea y espacios
+    const mailtoUrl = `mailto:${correoCompleto}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpoEmail)}`;
+
+    // 5. Abrir el manejador de correos del usuario
+    window.location.href = mailtoUrl;
+});
